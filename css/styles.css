@@ -312,10 +312,39 @@ img {
   padding-top: 0;
 }
 .work-item {
+  position: relative;
   margin-right: 30px;
+  
 }
 .work-item:last-child {
   margin-right: 0;
+}
+.work-text {
+  color: var(--white-text);
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  /* justify-content: center;
+  align-items: center; */
+
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.work-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  content: '';
+  display: block;
+  width: 100%;
+  height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* Team section */
