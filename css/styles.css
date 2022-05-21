@@ -314,7 +314,8 @@ img {
 .work-item {
   position: relative;
   margin-right: 30px;
-  
+  display: flex;
+
 }
 .work-item:last-child {
   margin-right: 0;
@@ -322,16 +323,19 @@ img {
 .work-text {
   color: var(--white-text);
   text-transform: uppercase;
-  text-align: center;
+}
+.work-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 70px;
+
   position: absolute;
   bottom: 0;
   z-index: 10;
-  /* justify-content: center;
-  align-items: center; */
-
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  
 }
 
 .work-item::after {
