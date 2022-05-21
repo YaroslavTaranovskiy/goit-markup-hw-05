@@ -27,6 +27,7 @@ ul {
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --white-text: #ffffff;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -106,6 +107,8 @@ img {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+
+transition: color var(--transition);
 }
 .site-nav .link {
   position: relative;
@@ -183,6 +186,9 @@ img {
 .contact .link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
+
+  transition: color var(--transition),
+  fill var(--transition);
 }
 
 
@@ -246,6 +252,9 @@ img {
 .btn-hero:focus {
   background-color: #188ce8;
   color: var(--white-text);
+
+  transition: color var(--transition),
+  background-color var(--transition);
 }
 
 .backdrop {
@@ -256,6 +265,8 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   z-index: 100;
+
+  transition: opacity var(--transition);
 }
 
 .backdrop.is-hidden {
@@ -475,6 +486,9 @@ img {
 .social-link:focus {
   background-color: var(--accent-color);
   fill: #fff;
+
+  transition: background-color var(--transition),
+  fill var(--transition);
 }
 
 .social-item:not(:last-child) {
@@ -504,6 +518,9 @@ img {
 .client-link:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
+
+  transition: border-color var(--transition),
+  fill var(--transition);
 }
 
 
@@ -569,6 +586,8 @@ img {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+
+  transition: color var(--transition);
 }
 
 .title-follow {
@@ -595,6 +614,8 @@ img {
 .follow-link:hover,
 .follow-link:focus {
   background-color: var(--accent-color);
+
+  transition: background-color var(--transition);
 }
 
 .follow-item:not(:last-child) {
@@ -648,6 +669,10 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
    0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  transition: background-color var(--transition),
+  color var(--transition),
+  box-shadow var(--transition);
 }
 .title.project-name {
   font-size: 18px;
@@ -680,6 +705,7 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
    0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow var(--transition);
 }
 
 .text-box {
