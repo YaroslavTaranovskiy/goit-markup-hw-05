@@ -27,7 +27,7 @@ ul {
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --white-text: #ffffff;
-  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -108,18 +108,21 @@ img {
 .site-nav .link:focus {
   color: var(--accent-color);
 
-transition: color var(--transition);
+
 }
 .site-nav .link {
   position: relative;
   display: block;
   color: var(--title-text-color);
   font-weight: 500;
+  
 
   text-decoration: none;
 
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition: color var(--transition);
 }
 .site-nav .nav-item {
   margin-right: 50px;
@@ -168,6 +171,10 @@ transition: color var(--transition);
 .contact .link {
   display: flex;
   color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
   text-decoration: none;
 
@@ -176,6 +183,9 @@ transition: color var(--transition);
 
   align-items: center;
   justify-content: center;
+
+  transition: color var(--transition),
+  fill var(--transition);
 }
 .link .header-icon {
   fill: currentColor;
@@ -187,8 +197,7 @@ transition: color var(--transition);
   color: var(--accent-color);
   fill: var(--accent-color);
 
-  transition: color var(--transition),
-  fill var(--transition);
+  
 }
 
 
@@ -247,14 +256,15 @@ transition: color var(--transition);
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  transition: color var(--transition),
+  background-color var(--transition);
 }
 .btn-hero:hover,
 .btn-hero:focus {
   background-color: #188ce8;
   color: var(--white-text);
 
-  transition: color var(--transition),
-  background-color var(--transition);
 }
 
 .backdrop {
@@ -491,15 +501,16 @@ transition: color var(--transition);
   align-items: center;
   justify-content: center;
 
-  fill: #AFB1B8
+  fill: #AFB1B8;
+
+  transition: background-color var(--transition),
+  fill var(--transition);
 }
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
   fill: #fff;
 
-  transition: background-color var(--transition),
-  fill var(--transition);
 }
 
 .social-item:not(:last-child) {
@@ -523,6 +534,9 @@ transition: color var(--transition);
   border-radius: 4px;
 
   fill: #AFB1B8;
+
+  transition: border-color var(--transition),
+  fill var(--transition);
 }
 
 .client-link:hover,
@@ -530,8 +544,6 @@ transition: color var(--transition);
   border-color: var(--accent-color);
   fill: var(--accent-color);
 
-  transition: border-color var(--transition),
-  fill var(--transition);
 }
 
 
@@ -585,6 +597,8 @@ transition: color var(--transition);
   color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
+
+  transition: color var(--transition);
 }
 
 .footer-list-item {
@@ -594,11 +608,11 @@ transition: color var(--transition);
   margin-bottom: 0;
 }
 
+
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
 
-  transition: color var(--transition);
 }
 
 .title-follow {
@@ -621,12 +635,13 @@ transition: color var(--transition);
   border-radius: 50%;
 
   fill: var(--white-text);
+
+  transition: background-color var(--transition);
 }
 .follow-link:hover,
 .follow-link:focus {
   background-color: var(--accent-color);
 
-  transition: background-color var(--transition);
 }
 
 .follow-item:not(:last-child) {
@@ -670,6 +685,10 @@ transition: color var(--transition);
   border-radius: 4px;
 
   padding: 6px 22px;
+
+  transition: background-color var(--transition),
+  color var(--transition),
+  box-shadow var(--transition);
 }
 
 .btn-portfolio:hover,
@@ -681,9 +700,7 @@ transition: color var(--transition);
    0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 
-  transition: background-color var(--transition),
-  color var(--transition),
-  box-shadow var(--transition);
+  
 }
 .title.project-name {
   font-size: 18px;
@@ -711,7 +728,7 @@ transition: color var(--transition);
 .portfolio-link {
   display: block;
   
-  
+  transition: box-shadow var(--transition);
 }
 
 .portfolio-link:hover,
@@ -719,8 +736,7 @@ transition: color var(--transition);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
    0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow var(--transition);
-  
+    
 }
 
 .text-box {
